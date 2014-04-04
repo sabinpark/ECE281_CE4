@@ -13,7 +13,7 @@ Program A loads a value into an accumulator and stores the current value of the 
 *Target met*
 
 ### Program
-First, the program loads the value of 9h into the accumulator.  From there, the program stores the current value of the accumulator (9h) into a label, *m1*.  *m1* points to the address *B0*.  The program then loads the value of 8h into the accumulator, then stores that value (8h) into a new label, *m2*, which points to the address *C4*.  The same process is repeated for the value of Bh, which is stored into the address, *CB*.  At the end, the program is put into an infinite loop to prevent the program from crashing.
+First, the program loads the value of *9*h into the accumulator.  From there, the program stores the current value of the accumulator (*9*h) into a label, *m1*.  *m1* points to the address *B0*.  The program then loads the value of *8*h into the accumulator, then stores that value (*8*h) into a new label, *m2*, which points to the address *C4*.  The same process is repeated for the value of *B*h, which is stored into the address, *CB*.  At the end, the program is put into an infinite loop to prevent the program from crashing.
 
 
 
@@ -27,7 +27,7 @@ Program B retrieves a value from location *B0*, doubles that value, then subtrac
 *Target met*
 
 ### Program
-The program begins by first loading the value of -4 into the accumulator, where -4 is equal to *Ch*.  Next, the value within address B0 is added twice to the accumulator.  Finally, the value in the accumulator is output to *Port 2*.  *NOTE:* a positive test value should be in the location of *B0*.  This program also ends with an infinite loop. 
+The program begins by first loading the value of -4 into the accumulator, where -4 is equal to *C*h.  Next, the value within address *B0* is added twice to the accumulator.  Finally, the value in the accumulator is output to *Port 2*.  *NOTE:* a positive test value should be in the location of *B0*.  This program also ends with an infinite loop. 
 
 
 ## Program C: *Loops*
@@ -40,7 +40,7 @@ Program C reads the value from *Input Port 3*, then displays that value on *Outp
 *Target met*
 
 ### Program
-The program first reads the value from *Input Port 3* and loads that value into the accumulator.  That value is then output into *Port 0*.  The accumulator is then decremented by 1.  The program accomplishes this by adding *Fh* (AKA -1) to the accumulator.  This current value in the accumulator is then output into *Port 1*.  Again, the accumulator decrements by 1, and then outputs the value into *Port 2*.  From here, the accumulator increments by 1, and the program loops back to outputting the current accumulator value into *Port 0*.  The program will continue to infinitely loop through and decrement each port.
+The program first reads the value from *Input Port 3* and loads that value into the accumulator.  That value is then output into *Port 0*.  The accumulator is then decremented by 1.  The program accomplishes this by adding *F*h (-1) to the accumulator.  This current value in the accumulator is then output into *Port 1*.  Again, the accumulator decrements by 1, and then outputs the value into *Port 2*.  From here, the accumulator increments by 1, and the program loops back to outputting the current accumulator value into *Port 0*.  The program will infinitely loop through and decrement each port.
 
 
 ## Extra Credit:
