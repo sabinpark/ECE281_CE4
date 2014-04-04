@@ -1,18 +1,18 @@
-		   00	   5	IN	3		N	1	N
+		   00	   5	IN	3	loads the input value into the accumulator	N	1	N
 		   01	   3				Y	0	N
-	loop	   02	   4	OUT	0		N	1	Y
+	loop	   02	   4	OUT	0	outputs the accum. value into Port 0	N	1	Y
 		   03	   0				Y	0	N
-		   04	   6	ADDI	F		N	1	N
+		   04	   6	ADDI	F	adds -1 to the accum. value	N	1	N
 		   05	   F				Y	0	N
-		   06	   4	OUT	1		N	1	Y
+		   06	   4	OUT	1	outputs the accum. value into Port 1	N	1	Y
 		   07	   1				Y	0	N
-		   08	   6	ADDI	F		N	1	Y
+		   08	   6	ADDI	F	adds -1 to the accum. value	N	1	Y
 		   09	   F				Y	0	N
-		   0A	   4	OUT	2		N	1	Y
+		   0A	   4	OUT	2	outputs the accum. value into Port 2	N	1	Y
 		   0B	   2				Y	0	N
-		   0C	   6	ADDI	1		N	1	N
+		   0C	   6	ADDI	1	adds +1 to the accum. value	N	1	N
 		   0D	   1				Y	0	N
-		   0E	   9	JMP	loop		N	2	Y
+		   0E	   9	JMP	loop	jumps back to where port 0 is updated	N	2	Y
 		   0F	   2				Y	0	N
 		   10	   0				Y	0	N
 		   11	   0	NOP			N	0	Y

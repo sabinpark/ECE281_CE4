@@ -1,19 +1,19 @@
-		   00	   7	LDAI	9		N	1	Y
+		   00	   7	LDAI	9	loads 9 to accum.	N	1	Y
 		   01	   9				Y	0	N
-		   02	   D	STA	m1		N	2	Y
+		   02	   D	STA	m1	stores 9 in m1	N	2	Y
 		   03	   0				Y	0	N
 		   04	   B				Y	0	N
-		   05	   7	LDAI	8		N	1	Y
+		   05	   7	LDAI	8	loads 8 to accum.	N	1	Y
 		   06	   8				Y	0	N
-		   07	   D	STA	m2		N	2	Y
+		   07	   D	STA	m2	stores 8 in m2	N	2	Y
 		   08	   4				Y	0	N
 		   09	   C				Y	0	N
-		   0A	   7	LDAI	B		N	1	Y
+		   0A	   7	LDAI	B	loads B to accum.	N	1	Y
 		   0B	   B				Y	0	N
-		   0C	   D	STA	m3		N	2	Y
+		   0C	   D	STA	m3	stores B in m3	N	2	Y
 		   0D	   B				Y	0	N
 		   0E	   C				Y	0	N
-	startend	   0F	   9	JMP	startend		N	2	Y
+	loop	   0F	   9	JMP	loop	infinite loop	N	2	Y
 		   10	   F				Y	0	N
 		   11	   0				Y	0	N
 		   12	   0	NOP			N	0	Y

@@ -1,14 +1,14 @@
-		   00	   7	LDAI	C		N	1	N
+		   00	   7	LDAI	C	load -4 initially	N	1	N
 		   01	   C				Y	0	N
-		   02	   E	ADDD	m1		N	2	Y
+		   02	   E	ADDD	m1	add the value from B0 to the accum.	N	2	Y
 		   03	   0				Y	0	N
 		   04	   B				Y	0	N
-		   05	   E	ADDD	m1		N	2	N
+		   05	   E	ADDD	m1	add the value in B0 once more	N	2	N
 		   06	   0				Y	0	N
 		   07	   B				Y	0	N
-		   08	   4	OUT	2		N	1	Y
+		   08	   4	OUT	2	output the result to port 2	N	1	Y
 		   09	   2				Y	0	N
-	end	   0A	   9	JMP	end		N	2	Y
+	end	   0A	   9	JMP	end	infinite loop	N	2	Y
 		   0B	   A				Y	0	N
 		   0C	   0				Y	0	N
 		   0D	   0	NOP			N	0	Y
