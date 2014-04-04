@@ -29,8 +29,12 @@ Program B retrieves a value from location *B0*, doubles that value, then subtrac
 ### Program
 The program begins by first loading the value of -4 into the accumulator, where -4 is equal to Ch.  Next, the value within address *B0* is added twice to the accumulator.  Finally, the value in the accumulator is output to *Port 2*.  *NOTE:* a positive test value should be in the location of *B0*.  This program also ends with an infinite loop. 
 
+I tested this program with an initial value of 1.  The output was E (-2).  I tested it again with an initial value of 4.  The output was 4.
 
 ## Program C: *Loops*
+
+### *UPDATE*
+Captain Silva confirmed that this program works.
 
 ### Description
 Program C reads the value from *Input Port 3*, then displays that value on *Output Port 0*.  *Port 1* displays 1 less of the value from *Port 0*.  *Port 2* displays 1 less of the value from *Port 1*.  From here, *Port 0* will decrement by 1.  Effectively, *Port 1* will decrement so as to be 1 less than the value in *Port 0*, and *Port 2* will also decrement so as to be 1 less than the value in *Port 1*.  Each port will continue to decrement accordingly in an infinite loop.
@@ -41,6 +45,8 @@ Program C reads the value from *Input Port 3*, then displays that value on *Outp
 
 ### Program
 The program first reads the value from *Input Port 3* and loads that value into the accumulator.  That value is then output into *Port 0*.  The accumulator is then decremented by 1.  The program accomplishes this by adding Fh (-1) to the accumulator.  This current value in the accumulator is then output into *Port 1*.  Again, the accumulator decrements by 1, and then outputs the value into *Port 2*.  From here, the accumulator increments by 1, and the program loops back to outputting the current accumulator value into *Port 0*.  The program will infinitely loop through and decrement each port.
+
+I tested the program by initializing the value of the input to 2.  As expected, Port 0 started with a value of 2, Port 1 became 1, and Port 2 became 0.  The values then decremented accordingly.
 
 
 ## Extra Credit:
